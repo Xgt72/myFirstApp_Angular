@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SignUp } from '../sign-up';
+import { SignUp } from './sign-up';
 
 @Component({
   selector: 'sign-up',
