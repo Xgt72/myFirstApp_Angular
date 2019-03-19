@@ -1,21 +1,21 @@
 <div class="container">
   <h2>Fiche de contact</h2>
-  <img [src]="User.photo" [alt]="User.nom" />
+  <img [src]="firstUser.photo" [alt]="firstUser.name" />
   <p>
-    <strong>Nom: {{User.name}}</strong>
+    <strong>Nom: {{firstUser.name}}</strong>
   </p>
   <p>
-    <strong>Prénom: {{User.firstName}}</strong>
+    <strong>Prénom: {{firstUser.firstName}}</strong>
   </p>
   <p>
-    {{User.quote}}
+    {{firstUser.quote}}
   </p>
 
-  <input [(ngModel)]="User.quote" />
+  <input [(ngModel)]="firstUser.quote" />
   <div class="age">
     <button (click)="displayAge()">Afficher/Masquer mon âge</button>
     <p [style.visibility]="displayNone">
-      {{User.age}}
+      {{firstUser.age}}
     </p>
   </div>
 </div>

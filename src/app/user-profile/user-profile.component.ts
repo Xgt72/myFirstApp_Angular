@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output, Input } from '@angular/core';
+import { User } from './user';
 
 @Component({
   selector: 'user-profile',
@@ -9,7 +10,7 @@ export class UserProfileComponent implements OnInit {
   @Input() displayNone: string ="hidden";
   @Output() displayRequest = new EventEmitter<string>();
 
-  User = {
+  firstUser: User = {
     name: "Doe",
     firstName: "John",
     age: 25,
