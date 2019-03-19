@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Fiche de contact</h2>
+  <img [src]="User.photo" [alt]="User.nom" />
+  <p>
+    <strong>Nom: {{User.name}}</strong>
+  </p>
+  <p>
+    <strong>Prénom: {{User.firstName}}</strong>
+  </p>
+  <p>
+    {{User.quote}}
+  </p>
+
+  <input [(ngModel)]="User.quote" />
+  <div class="age">
+    <button (click)="displayAge()">Afficher/Masquer mon âge</button>
+    <p [style.visibility]="displayNone">
+      {{User.age}}
+    </p>
+  </div>
+</div>
