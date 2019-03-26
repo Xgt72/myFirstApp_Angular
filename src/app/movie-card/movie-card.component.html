@@ -1,0 +1,8 @@
+<ul *appDisplayMovieList="showMovies">
+  <li *ngFor="let m of movieList" appHighLightCard>
+    <h2>{{m.title}}</h2>
+    <img [src]="imagePath + m.posterImage" [alt]="m.title"/>
+    <p>Director: {{m.director}}</p>
+    <p>Realease year: {{m.year}}</p>
+  </li>
+</ul>

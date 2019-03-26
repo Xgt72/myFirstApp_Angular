@@ -5,12 +5,18 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
+import { HighLightCardDirective } from './high-light-card.directive';
+import { DisplayMovieListDirective } from './display-movie-list.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    MovieCardComponent,
+    HighLightCardDirective,
+    DisplayMovieListDirective
   ],
   imports: [
     BrowserModule,
