@@ -8,9 +8,15 @@ import { SignUp } from './sign-up';
 })
 export class SignUpComponent implements OnInit {
 
-  firstSignUp : SignUp = {
-    email: "youremail@dresss.com"
-  };
+  firstSignUp : SignUp = new SignUp();
+
+  submitted = false;
+
+  diagnostic = true;
+  
+  onSubmit(){
+    console.log("form submitted");
+  }
 
   constructor() { }
 
