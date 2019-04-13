@@ -1,0 +1,9 @@
+<p>Présentation du développeur {{developer.lastName}} {{developer.firstName}}</p>
+<p>C'est un {{developer.sexe}} qui est agé de {{developer.age}} ans</p>
+<p>Voici sa biographie: {{developer.bio}}</p>
+<p>Voici ses compétences:</p>
+<ul>
+  <li *ngFor="let devOneSkill of developer.skills">
+    <app-skill [skill]="devOneSkill"></app-skill>
+  </li>
+</ul>

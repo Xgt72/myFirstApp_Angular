@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ROUTES } from './app.routes';
 import { MenuComponent } from './menu/menu.component';
+import { DeveloperComponent } from './developer/developer.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MenuComponent } from './menu/menu.component';
     DisplayMovieListDirective,
     HomeComponent,
     ContactComponent,
-    MenuComponent
+    MenuComponent,
+    DeveloperComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
