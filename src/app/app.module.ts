@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -15,6 +16,7 @@ import { ROUTES } from './app.routes';
 import { MenuComponent } from './menu/menu.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
+import { SearchMovieComponent } from './search-movie/search-movie.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,13 @@ import { SkillComponent } from './skill/skill.component';
     ContactComponent,
     MenuComponent,
     DeveloperComponent,
-    SkillComponent
+    SkillComponent,
+    SearchMovieComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
