@@ -1,0 +1,8 @@
+<ul>
+  <h3>Voici notre carte de cocktails</h3>
+  <li *ngFor="let cocktail of cocktails">
+    <p class="Name">{{cocktail.name}}</p>
+    <p>Prix : {{cocktail.price}}€</p>
+    <img [src]="cocktail.img" [alt]="cocktail.name" />
+  </li>
+</ul>

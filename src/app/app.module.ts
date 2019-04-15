@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from "@angular/forms";
+import { CocktailService } from "./cocktail.service";
 
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -17,6 +18,7 @@ import { MenuComponent } from './menu/menu.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { SearchMovieComponent } from './search-movie/search-movie.component';
     MenuComponent,
     DeveloperComponent,
     SkillComponent,
-    SearchMovieComponent
+    SearchMovieComponent,
+    CocktailListComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,7 @@ import { SearchMovieComponent } from './search-movie/search-movie.component';
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [CocktailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
