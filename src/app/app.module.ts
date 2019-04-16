@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from "@angular/forms";
-import { CocktailService } from "./cocktail.service";
+import { HttpClientModule } from "@angular/common/http";
+
 
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -18,6 +19,7 @@ import { MenuComponent } from './menu/menu.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
+import { CocktailService } from "./cocktail.service";
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 @NgModule({
@@ -40,6 +42,7 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [CocktailService],

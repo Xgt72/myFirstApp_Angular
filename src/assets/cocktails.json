@@ -1,0 +1,7 @@
+[
+    {"name": "Mojito", "price": 7, "img": "https://cache.marieclaire.fr/data/photo/w1000_ci/54/mojito.jpg"},
+    {"name": "Punch Exotique", "price": 5, "img": "http://img.over-blog-kiwi.com/0/99/11/05/20150714/ob_6ac121_img-0991.JPG"},
+    {"name": "Pina Colada", "price": 5.50, "img": "http://mobile-cuisine.com/wp-content/uploads/2012/07/pina-colada1.jpg"},
+    {"name": "Soupe Angevine", "price": 10, "img": "https://www.atelierdeschefs.com/media/recette-e7517-cocktail-blue-lagoon.jpg"},
+    {"name": "Blue Lagoon", "price": 15, "img": "http://farm4.staticflickr.com/3690/10610488206_8209a7b861_b.jpg"}
+]
