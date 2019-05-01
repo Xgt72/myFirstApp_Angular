@@ -1,0 +1,11 @@
+<p>
+  Voici les questions de Maître Yoda.
+</p>
+<app-question *ngFor="let question of questions" [question]="question.title" [id]="question.id"
+  (getAnswer)="onGetAnswer($event)"></app-question>
+<button type="button" (click)="getMyResult()">Quel est mon score ?</button>
+<div *ngIf="quizIsValid">
+  <p *ngFor="let answer of answers; let index = index">{{ answer.title }} la bonne réponse est : {{ questions[index].answer }}, tu as {{ answer.score }} point(s)</p>
+  <p>Ton score est de {{ userPoints }} point(s)</p>
+  <p>{{ yodaMessage }}</p>
+</div>

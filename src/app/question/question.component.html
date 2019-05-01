@@ -1,0 +1,7 @@
+<input type="radio" [name]="id" value=true (click)="sendAnswer(id, true)" />
+<label for="yes">Oui</label>
+<input type="radio" [name]="id" value=false (click)="sendAnswer(id, false)" />
+<label type="no">Non</label>
+<p>{{ question }}</p>
+<!-- <button type="button" (click)="sendAnswer()">Valider votre réponse</button> -->
+<br />

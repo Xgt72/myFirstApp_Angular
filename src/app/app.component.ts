@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NasaService } from './nasa.service';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,16 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent {
-  title = 'Xavier website ';
+  public title = 'Xavier website ';
+  public imgOfTheDay: string;
+
+  constructor(private myService: NasaService){
+    this.imgOfTheDay = "";
+
+    this.myService.getImageOfTheDay().subscribe(
+      (paramImage: string) => {
+        this.imgOfTheDay = paramImage;
+      }
+    );
+  }
 }

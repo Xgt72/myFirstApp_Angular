@@ -21,6 +21,8 @@ import { SkillComponent } from './skill/skill.component';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
 import { CocktailService } from "./cocktail.service";
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
+import { YodaComponent } from './yoda/yoda.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
     DeveloperComponent,
     SkillComponent,
     SearchMovieComponent,
-    CocktailListComponent
+    CocktailListComponent,
+    YodaComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
